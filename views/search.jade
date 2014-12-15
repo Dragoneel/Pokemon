@@ -1,0 +1,461 @@
+doctype html
+html(lang='en-US')
+  head
+    meta(charset='UTF-8')
+    | &#x9;
+    meta(name='keywords', content='key,word')
+    | &#x9;
+    meta(name='description', content='Some description')
+    |     
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    | &#x9;
+    title myPedia - Search Engine
+    | &#x9;
+    link(rel='shortcut icon', type='image/x-icon', href='http://demo.swebdesignstudio.com/themes/couponer/wp-content/uploads/2014/07/favicon.png')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      |       
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    | &#x9;
+    link(rel='alternate', type='application/rss+xml', title='Couponer » Feed', href='http://demo.swebdesignstudio.com/themes/couponer/feed/')
+    link(rel='alternate', type='application/rss+xml', title='Couponer » Comments Feed', href='http://demo.swebdesignstudio.com/themes/couponer/comments/feed/')
+    link#coupon-awesome-css(rel='stylesheet', href='http://demo.swebdesignstudio.com/themes/couponer/wp-content/themes/couponer/css/font-awesome.min.css?ver=3.9.3', type='text/css', media='all')
+    link#ssbaFont-css(rel='stylesheet', href='//fonts.googleapis.com/css?family=Indie+Flower&ver=3.9.3', type='text/css', media='all')
+    link#coupon-navigation-font-css(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato%3A100%2C300%2C400%2C700%2C900%2C100italic%2C300italic%2C400italic%2C700italic%2C900italic&ver=3.9.3', type='text/css', media='all')
+    link#coupon-bootstrap-css(rel='stylesheet', href='http://demo.swebdesignstudio.com/themes/couponer/wp-content/themes/couponer/css/bootstrap.min.css?ver=3.9.3', type='text/css', media='all')
+    link#coupon-slider-css(rel='stylesheet', href='http://demo.swebdesignstudio.com/themes/couponer/wp-content/themes/couponer/css/slider.css?ver=3.9.3', type='text/css', media='all')
+    link#coupon-flexslider-css(rel='stylesheet', href='http://demo.swebdesignstudio.com/themes/couponer/wp-content/themes/couponer/css/flexslider.css?ver=3.9.3', type='text/css', media='all')
+    link(rel='stylesheet', id='coupon-owl.carousel-css', href='http://demo.swebdesignstudio.com/themes/couponer/wp-content/themes/couponer/css/owl.carousel.css?ver=3.9.3', type='text/css', media='all')
+    link#coupon-style-css(rel='stylesheet', href='http://demo.swebdesignstudio.com/themes/couponer/wp-content/themes/couponer/style.css?ver=3.9.3', type='text/css', media='all')
+    link#dynamic-layout-css(rel='stylesheet', href='http://demo.swebdesignstudio.com/themes/couponer/wp-admin/admin-ajax.php?action=dynamic_css&ver=3.9.3', type='text/css', media='all')
+    link#jquery-style-css(rel='stylesheet', href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css?ver=3.9.3', type='text/css', media='all')
+    script(type='text/javascript', src='http://demo.swebdesignstudio.com/themes/couponer/wp-includes/js/jquery/jquery.js?ver=1.11.0')
+    script(type='text/javascript', src='http://demo.swebdesignstudio.com/themes/couponer/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1')
+    link(rel='EditURI', type='application/rsd+xml', title='RSD', href='http://demo.swebdesignstudio.com/themes/couponer/xmlrpc.php?rsd')
+    link(rel='wlwmanifest', type='application/wlwmanifest+xml', href='http://demo.swebdesignstudio.com/themes/couponer/wp-includes/wlwmanifest.xml')
+    |  
+    link(rel='prev', title='Expiring', href='http://demo.swebdesignstudio.com/themes/couponer/expiring/')
+    link(rel='next', title='Blog', href='http://demo.swebdesignstudio.com/themes/couponer/blog/')
+    meta(name='generator', content='WordPress 3.9.3')
+    link(rel='canonical', href='http://demo.swebdesignstudio.com/themes/couponer/')
+    link(rel='shortlink', href='http://demo.swebdesignstudio.com/themes/couponer/')
+    script(src="../node_modules/angular/angular.js")
+
+
+    style(type='text/css').
+      .ssba {
+      }
+      .ssba img
+      {
+      width: 35px !important;
+      padding: 6px;
+      border:  0;
+      box-shadow: none !important;
+      display: inline !important;
+      vertical-align: middle;
+      }
+      .ssba, .ssba a
+      {
+      text-decoration:none;
+      background: none;
+      font-family: Indie Flower;
+      font-size: 	20px;
+      }
+      .sameHeight{
+      max-height: 200px;
+      height: 200px;
+      overflow: hidden;
+      }
+      .sameM{
+      height: 150px;
+      overflow: hidden;
+      }
+    script(type='text/javascript').
+      var ajaxurl = 'http://demo.swebdesignstudio.com/themes/couponer/wp-admin/admin-ajax.php';
+  body.home.page.page-id-38.page-template.page-template-page-tpl_home-php
+    input.border-color-error(type='hidden', value='#ff4f53')
+    input.border-color-normal(type='hidden', value='#e5e5e5')
+    //
+      =====================================================================================================================================
+      N A V I G A T I O N
+      ======================================================================================================================================
+    // main-navigation
+    //- #navigation.clearfix.fixedsticky
+    //-   nav.navbar.navbar-default.collapsed(role='navigation')
+    //-     .container
+    //-       .row
+    //-         .col-md-12
+    //-           .navbar-header
+    //-             button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+    //-               span.sr-only Toggle navigation
+    //-               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+    //-               span.fa.fa-bars
+    //-             | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+    //-             a.navbar-brand(href='http://demo.swebdesignstudio.com/themes/couponer')
+    //-               img(src='http://demo.swebdesignstudio.com/themes/couponer/wp-content/uploads/2014/07/logo_v1.png', title='', alt='')
+    //-               // <h1>myPedia</h1>
+    //-           // Collect the nav links, forms, and other content for toggling
+    //-           .collapse.navbar-collapse.navbar-right.navbar-ex1-collapse
+    //-             ul.nav.navbar-nav
+    //-               li#menu-item-210.menu-item.menu-item-type-post_type.menu-item-object-page.current-menu-item.page_item.page-item-38.current_page_item.menu-item-210
+    //-                 a.active(title='Home', href='http://demo.swebdesignstudio.com/themes/couponer/') Home
+    //-               li#menu-item-204.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-204
+    //-                 a(title='All Shops', href='http://demo.swebdesignstudio.com/themes/couponer/all-shops/') Contact Us
+    //-           // .navbar-collapse
+    //-     // .container
+    // .main-navigation
+    //
+      =====================================================================================================================================
+      S C R E E N
+      ======================================================================================================================================
+    // screen
+    section.screen(style="height:100%")
+      // container
+      .container
+        // row
+        .row
+          // screen-content
+          .screen-content.home-screen.clearfix
+            // slogan
+            .slogan.col-md-12
+              h1 Series Search Engine
+              | &#x9;&#x9;&#x9;&#x9;&#x9;
+              p.center-block
+                | Based on dbpedia and elasticsearch
+            // .slogan
+            // filters
+            .filters.col-md-8.col-md-offset-2.col-sm-12(ng-app)
+              // shop-search
+              form.form-horizontal.search-coupon(action="/searching", method="get",role='search', ng-controller="searchController")
+                .form-group.has-feedback
+                  span.fa.fa-search.form-control-feedback.icon-left
+                  input.form-control.ajax_search(type='text', ng-model="search", name='search_6hw5QKQdyj3YHfmwoaXyLDKOBXDHRHYYZv4PfU2Nd5MUl8rJipi332SE0wmSdkQcQU25O4T19FWvOof6OxaRA2wBzStNdj03e292', placeholder='Type what your are looking for')
+                  span.fa.fa-angle-down.form-control-feedback
+                .ajax_search_results
+                  ul.list-unstyled
+                    ul
+
+
+              // .shop-search
+            // .filters
+          // .screen-content
+        // .row
+      // .container
+    // .screen
+    //
+      =====================================================================================================================================
+      F E A T U R E D
+      ======================================================================================================================================
+    // featured
+    section.featured
+      // container
+      .container
+        // row
+        .row
+          // tab-content
+          .tab-content
+            // featured-elements
+            #feature.tab-pane.fade.in.active
+              // feature-container-first
+              .featured-container.col-md-12
+              // .first-row
+            // .feature-container-first
+          // .popular-elements
+          // latest-elements
+          #daily.tab-pane.fade.in
+            // feature-container-first
+            .featured-container.col-md-12
+              // first-row
+              .row
+                each val in res
+                  // item-1
+                  .featured-item-container.col-md-3
+                    .featured-item.sameSize
+                      .logotype.logotype-no-padding
+                        .logotype-image
+                          
+                          img.attachment-daily_offer.wp-post-image.sameHeight(src='#{val.th.value}', alt='#{val.titre.value}')
+                      | &#x9;&#x9;
+                      | &#x9;&#x9;
+                      a.btn.btn-custom.btn-shop.btn-full.blue-bg.btn-top.btn-default.btn-lg(href='#{val.th.value}') Details
+                      | &#x9;&#x9;
+                      .featured-item-content.sameM
+                        h4 #{val.titre.value}
+                        | &#x9;&#x9;&#x9;
+                        - var resume = val.resume.value.substring(0,85)+" ...";
+                        p(style="text-align: left;")=resume
+                          
+
+                      | &#x9;&#x9;
+                      .item-meta.daily-meta
+                        ul.list-inline.list-unstyled 
+                          li
+                            a(href='#')
+                              span.fa.fa-clock-o(style="margin-top:-15px;") 
+                              span(style="font-size:13px;padding-left:10px;") #{val.release.value}
+                              
+                
+              // .first-row
+            // .feature-container-first
+          // .newest-elements
+        // .tab-content
+      // .row
+      // .container
+    // .featured
+    //
+      =====================================================================================================================================
+      S P E C I A L
+      ======================================================================================================================================
+    // special
+    section.special.no-bottom-padding
+      // container
+      .container
+        // row
+        .row
+          // title-column
+          .special-box.col-md-3
+            .caption.special-caption
+              h2 Extra Categories
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            .line-divider
+              span.line-mask.green-bg
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            p Comming Soon...
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            a.btn.btn-custom.btn-default.btn-lg(href='#')
+              | See All
+          // .title-column
+          .col-md-9
+            .row.category-row
+              // element-column
+              .special-item.col-md-4
+                a(href='#')
+                  .special-item-inner
+                    .special-icon
+                      span.fa.fa-laptop
+                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                      h3 Computers
+              // .element-column
+              // element-column
+              .special-item.col-md-4
+                a(href='#')
+                  .special-item-inner
+                    .special-icon
+                      span.fa.fa-home
+                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                      h3 House
+              // .element-column
+              // element-column
+              .special-item.col-md-4
+                a(href='#')
+                  .special-item-inner
+                    .special-icon
+                      span.fa.fa-picture-o
+                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                      h3 Photography
+              // .element-column
+        // .row
+      // .container
+    // .special
+    //
+      =====================================================================================================================================
+      B L O G  L A T E S T
+      ======================================================================================================================================
+    // blog
+    section.blog
+      // container
+      .container
+        // row
+        .row
+          // title
+          .title.blog-title.col-md-12
+            h2 Latest Series
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            .line-divider
+              span.line-mask.green-bg
+          // .title
+        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+        .row
+          // blog-post-1
+          .blog-post.col-md-4
+            // blog-inner
+            .blog-inner.blog-inner-home
+              // blog-top-icon
+              a(href='http://demo.swebdesignstudio.com/themes/couponer/lorem-ipsum-dolor-sit-amet-7/')
+                .blog-icon-mask.green-bg
+                  i.fa.fa-plus-square-o
+              // .blog-top-icon
+              // blog-image
+              .blog-image
+                img.img-responsive.wp-post-image(width='350', height='215', src='http://demo.swebdesignstudio.com/themes/couponer/wp-content/uploads/2014/06/Fotolia_12377076_XXL2-350x215.jpg', alt='Fotolia_12377076_XXL')
+              // .blog-image
+              // blog-content
+              .blog-content
+                h4 Lorem ipsum dolor sit amet.
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, libero, quibusdam sint ex aspernatur repellendus ipsam labore&mldr;
+              // .blog-content
+              // blog-meta
+              .item-meta
+                ul.list-inline.list-unstyled
+                  li
+                    a(href='javascript:;')
+                      span.fa.fa-clock-o
+                      | June 26, 2014
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  li.pull-right
+                    a(href='http://demo.swebdesignstudio.com/themes/couponer/lorem-ipsum-dolor-sit-amet-7/')
+                      span.fa.fa-plus-square
+              // .blog-meta
+            // .blog-inner
+          // .blog-post-1
+          // blog-post-1
+          .blog-post.col-md-4
+            // blog-inner
+            .blog-inner.blog-inner-home
+              // blog-top-icon
+              a(href='http://demo.swebdesignstudio.com/themes/couponer/lorem-ipsum-dolor-sit-amet-6/')
+                .blog-icon-mask.green-bg
+                  i.fa.fa-plus-square-o
+              // .blog-top-icon
+              // blog-image
+              .blog-image
+                img.img-responsive.wp-post-image(width='350', height='215', src='http://demo.swebdesignstudio.com/themes/couponer/wp-content/uploads/2014/06/Fotolia_34190080_Subscription_Monthly_M2-350x215.jpg', alt='New York City')
+              // .blog-image
+              // blog-content
+              .blog-content
+                h4 Lorem ipsum dolor sit amet.
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, libero, quibusdam sint ex aspernatur repellendus ipsam labore&mldr;
+              // .blog-content
+              // blog-meta
+              .item-meta
+                ul.list-inline.list-unstyled
+                  li
+                    a(href='javascript:;')
+                      span.fa.fa-clock-o
+                      | June 26, 2014
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  li.pull-right
+                    a(href='http://demo.swebdesignstudio.com/themes/couponer/lorem-ipsum-dolor-sit-amet-6/')
+                      span.fa.fa-plus-square
+              // .blog-meta
+            // .blog-inner
+          // .blog-post-1
+          // blog-post-1
+          .blog-post.col-md-4
+            // blog-inner
+            .blog-inner.blog-inner-home
+              // blog-top-icon
+              a(href='http://demo.swebdesignstudio.com/themes/couponer/lorem-ipsum-dolor-sit-amet-5/')
+                .blog-icon-mask.green-bg
+                  i.fa.fa-plus-square-o
+              // .blog-top-icon
+              // blog-image
+              .blog-image
+                img.img-responsive.wp-post-image(width='350', height='215', src='http://demo.swebdesignstudio.com/themes/couponer/wp-content/uploads/2014/06/Fotolia_26240674_Subscription_XXL-e13542074741512-350x215.jpg', alt='Fotolia_26240674_Subscription_XXL-e1354207474151')
+              // .blog-image
+              // blog-content
+              .blog-content
+                h4 Lorem ipsum dolor sit amet.
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, libero, quibusdam sint ex aspernatur repellendus ipsam labore&mldr;
+              // .blog-content
+              // blog-meta
+              .item-meta
+                ul.list-inline.list-unstyled
+                  li
+                    a(href='javascript:;')
+                      span.fa.fa-clock-o
+                      | June 26, 2014
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  li.pull-right
+                    a(href='http://demo.swebdesignstudio.com/themes/couponer/lorem-ipsum-dolor-sit-amet-5/')
+                      span.fa.fa-plus-square
+              // .blog-meta
+            // .blog-inner
+          // .blog-post-1
+      // .row
+      // .container
+    // .blog
+    //
+      =====================================================================================================================================
+      F O O T E R
+      ======================================================================================================================================
+    // footer
+    section.footer
+      // container
+      .container
+        // row
+        .row
+          .col-md-3
+            .widget.footer_widget
+              .caption.footer-caption
+                h3 Newsletter
+              .newsletter
+                p Latest series
+                | &#x9;&#x9;&#x9;&#x9;&#x9;
+                .subscription_result
+                | &#x9;&#x9;&#x9;&#x9;&#x9;
+                fieldset
+                  .input-group
+                    input.form-control-news.email(type='text', placeholder='Email address', name='email_news')
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    br
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                    button.btn.btn-custom.btn-default.subscribe(type='submit') Subscribe
+          | &#x9;&#x9;&#x9;&#x9;
+          .col-md-3
+            .widget.footer_widget
+              .caption.footer-caption
+                h3 FAQ
+              ul.list-unstyled.faq
+                li
+                  a(href='http://demo.swebdesignstudio.com/themes/couponer/faq/') Duis aute irure dolor?
+                li
+                  a(href='http://demo.swebdesignstudio.com/themes/couponer/faq/') Sunt in culpa qui officia?
+                li
+                  a(href='http://demo.swebdesignstudio.com/themes/couponer/faq/') Cillum dolore eu fugiat?
+                li
+                  a(href='http://demo.swebdesignstudio.com/themes/couponer/faq/') Lorem Ipsum dolor sit?
+                li
+                  a(href='http://demo.swebdesignstudio.com/themes/couponer/faq/') Dolor Sit Amet?
+                li
+                  a(href='http://demo.swebdesignstudio.com/themes/couponer/faq/') Set Do Eiusmod?
+                li
+                  a(href='http://demo.swebdesignstudio.com/themes/couponer/faq/') Excepteur sint occaecat?
+          | &#x9;&#x9;&#x9;&#x9;
+          .col-md-3
+            .widget.footer_widget
+              .caption.footer-caption
+                h3 About Us
+              .widget-list
+                ul.list-unstyled.faq
+                  li
+                    a(href='#') Sed ut perspiciatis unde
+                  | &#x9;
+                  li
+                    a(href='#') Omnis iste natus error
+                  | &#x9;
+                  li
+                    a(href='#') Sit voluptatem accusantium
+                  | &#x9;
+                  li
+                    a(href='#') Doloremque laudantium
+                  | &#x9;
+                  li
+                    a(href='#') Totam rem aperiameaque
+                  | &#x9;
+                  li
+                    a(href='#') Ipsa quae ab illo inventore veritatis
+
+          
+    // .footer

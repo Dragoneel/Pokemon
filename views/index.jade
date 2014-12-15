@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  //- -var ob = res;
+  each val in res
+   .spec
+    //- img(src=val.thumbnail.value)
+    p=val.serie.value
+    //- p=val.creator.value
+    //- p Episode N°#{val.number.value} Season #{val.season.value}
+    p=val.resume.value
+    //- - console.log("================================================");
+    //- - console.log(val.Thing.value);
+    //- - console.log("================================================");
